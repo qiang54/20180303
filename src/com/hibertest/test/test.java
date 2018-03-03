@@ -29,7 +29,7 @@ public class test {
 		// 编写保存代码
 		Customer c = new Customer();
 		// c.setCust_id(cust_id);	已经自动递增
-		c.setCust_name("测试名称1");
+		c.setCust_name("测试名称3");
 		c.setCust_mobile("110");
 		// 保存客户
 		session.save(c);
