@@ -16,9 +16,10 @@ public class test {
 	@Test
 	public void testSave(){
 		// 先加载配置文件
-		Configuration config = new Configuration();
-		// 默认加载src目录下的配置文件
-		config.configure();
+		Configuration config = new Configuration().configure();
+		/*// 默认加载src目录下的配置文件
+		config.configure();*/
+		
 		// 创建SessionFactory对象
 		SessionFactory factory = config.buildSessionFactory();
 		// 创建session对象

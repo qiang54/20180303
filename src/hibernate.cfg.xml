@@ -25,7 +25,7 @@
                 * validate		    :使用原有表，进行校验.
 		
 		 -->
-		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
 		
 		<!-- 引入映射文件 -->
 		<mapping resource="com/hibertest/domain/Customer.hbm.xml"/>
