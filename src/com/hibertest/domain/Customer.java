@@ -3,16 +3,16 @@ package com.hibertest.domain;
 public class Customer {
 
 	/**
-     *   `cust_id` bigint(32) NOT NULL AUTO_INCREMENT COMMENT '¿Í»§±àºÅ(Ö÷¼ü)',
-		  `cust_name` varchar(32) NOT NULL COMMENT '¿Í»§Ãû³Æ(¹«Ë¾Ãû³Æ)',
-		  `cust_user_id` bigint(32) DEFAULT NULL COMMENT '¸ºÔðÈËid',
-		  `cust_create_id` bigint(32) DEFAULT NULL COMMENT '´´½¨ÈËid',
-		  `cust_source` varchar(32) DEFAULT NULL COMMENT '¿Í»§ÐÅÏ¢À´Ô´',
-		  `cust_industry` varchar(32) DEFAULT NULL COMMENT '¿Í»§ËùÊôÐÐÒµ',
-		  `cust_level` varchar(32) DEFAULT NULL COMMENT '¿Í»§¼¶±ð',
-		  `cust_linkman` varchar(64) DEFAULT NULL COMMENT 'ÁªÏµÈË',
-		  `cust_phone` varchar(64) DEFAULT NULL COMMENT '¹Ì¶¨µç»°',
-		  `cust_mobile` varchar(16) DEFAULT NULL COMMENT 'ÒÆ¶¯µç»°',
+     *   `cust_id` bigint(32) NOT NULL AUTO_INCREMENT COMMENT 'ï¿½Í»ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½)',
+		  `cust_name` varchar(32) NOT NULL COMMENT 'ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½Ë¾ï¿½ï¿½ï¿½ï¿½)',
+		  `cust_user_id` bigint(32) DEFAULT NULL COMMENT 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½id',
+		  `cust_create_id` bigint(32) DEFAULT NULL COMMENT 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½id',
+		  `cust_source` varchar(32) DEFAULT NULL COMMENT 'ï¿½Í»ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ô´',
+		  `cust_industry` varchar(32) DEFAULT NULL COMMENT 'ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµ',
+		  `cust_level` varchar(32) DEFAULT NULL COMMENT 'ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½',
+		  `cust_linkman` varchar(64) DEFAULT NULL COMMENT 'ï¿½ï¿½Ïµï¿½ï¿½',
+		  `cust_phone` varchar(64) DEFAULT NULL COMMENT 'ï¿½Ì¶ï¿½ï¿½ç»°',
+		  `cust_mobile` varchar(16) DEFAULT NULL COMMENT 'ï¿½Æ¶ï¿½ï¿½ç»°',
 		  PRIMARY KEY (`cust_id`)
 	 */
 	private Long cust_id;
@@ -88,4 +88,14 @@ public class Customer {
 	public void setCust_mobile(String cust_mobile) {
 		this.cust_mobile = cust_mobile;
 	}
+	
+	@Override
+	public String toString() {
+		return "Customer [cust_id=" + cust_id + ", cust_name=" + cust_name + ", cust_user_id=" + cust_user_id
+				+ ", cust_create_id=" + cust_create_id + ", cust_source=" + cust_source + ", cust_industry="
+				+ cust_industry + ", cust_level=" + cust_level + ", cust_linkman=" + cust_linkman + ", cust_phone="
+				+ cust_phone + ", cust_mobile=" + cust_mobile + "]";
+	}
+	
+	
 }
